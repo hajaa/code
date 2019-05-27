@@ -1,0 +1,42 @@
+.topMenu li{
+	position: relative;
+}
+
+.topMenu li ul{
+	position: absolute;
+	background-color: white;
+	width: 100px;
+	padding-left: 20px;
+	margin-left: 0px;
+	margin-top: 20px;
+	z-index: 10;
+}
+
+.topMenu ul li ul li{
+	list-style: none;
+	padding: 10px 0px 10px 10px;
+	margin-left: -20px;
+	width: 110px;
+}
+
+.topMenu li ul li a{
+	text-decoration: none;
+}
+
+.topMenu ul li ul{
+	display: none;
+}
+
+.topMenu ul li:hover > ul{
+	display: block;
+	transition: 0.5s opacity;
+}
+
+.topMenu ul li ul li:hover{
+	background-color: #00a094;
+	transition: 0.5s;
+}
+
+.topMenu ul li ul li a{
+	color: black;
+}
